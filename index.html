@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* Styles for hiding list by default */
         #myList {
@@ -24,12 +25,29 @@
             height: 20px;
         }
 
-        /* Fixation of video placement */
-        #fixed-video {
+        .video-container {
             position: fixed;
-            bottom: 0;
-            right: 0;
+            bottom: 10px;
+            right: 10px;
+            width: 320px;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border: 1px solid #d3d3d3;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             z-index: 1000;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 240px;
+            transition: height 0.3s ease;
+            /* Animation for hiding video */
+        }
+
+        .video-container:hover video {
+            height: 0;
+            /* Hide the video when hover the cursor over the image */
         }
     </style>
 </head>
@@ -181,8 +199,8 @@
         </section>
 
         <section>
-            <div id="fixed-video">
-                <video autoplay muted loop controls width="400" height="300">
+            <div class="video-container">
+                <video autoplay muted loop width="320" height="240">
                     <source
                         src="https://media.istockphoto.com/id/1191015722/pl/filmy/pies-dalmaty%C5%84czyk-na-pla%C5%BCy-o-zachodzie-s%C5%82o%C5%84ca.mp4?s=mp4-640x640-is&k=20&c=FDdFS70OrUhyd9Nziz2z6Ru8P1OOZ44TBJNNz3JwVDE="
                         type="video/mp4">
