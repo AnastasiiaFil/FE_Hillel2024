@@ -23,6 +23,14 @@
             width: 50%;
             height: 20px;
         }
+
+        /* Fixation of video placement */
+        #fixed-video {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            z-index: 1000;
+        }
     </style>
 </head>
 
@@ -171,6 +179,18 @@
                     physical and mental exercise.</p>
             </details>
         </section>
+
+        <section>
+            <div id="fixed-video">
+                <video autoplay muted loop controls width="400" height="300">
+                    <source
+                        src="https://media.istockphoto.com/id/1191015722/pl/filmy/pies-dalmaty%C5%84czyk-na-pla%C5%BCy-o-zachodzie-s%C5%82o%C5%84ca.mp4?s=mp4-640x640-is&k=20&c=FDdFS70OrUhyd9Nziz2z6Ru8P1OOZ44TBJNNz3JwVDE="
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
     </main>
 
 </body>
