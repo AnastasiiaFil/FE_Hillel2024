@@ -1,0 +1,103 @@
+/* Hide the content of the tabs by default */
+.accordion-content {
+  background-color: #edececb4;
+  display: none;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+/* Accordion buttons styling */
+.accordion-btn {
+  background-color: #ddddddb4;
+  color: #333;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+/* Changing the background-color of buttons when cursor hovers */
+.accordion-btn:hover {
+  background-color: #ddd;
+}
+
+/* Style of active button */
+.active-btn {
+  background-color: #ccc;
+}
+
+/* Descendant Selector */
+.accordion-content h3 {
+  color: rgba(115, 21, 21, 0.873);
+}
+
+/* CSS id Selector */
+#centering {
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* CSS class Selector */
+.note-box {
+  background-color: #fbf7c6;
+}
+
+/* CSS element Selector */
+h1 {
+  text-align: center;
+  color: #1f3821;
+}
+
+/* Adding divider lines between specific elements inside */
+.accordion-content .with-divider {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+/* CSS Universal Selector */
+* {
+  font-family: Arial, sans-serif;
+}
+
+/* Styling of the code window */
+pre {
+  background-color: #fffcfc;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 5px solid rgba(115, 21, 21, 0.873);
+  width: 300px;
+  height: 100px;
+  margin-left: 100px;
+}
+
+/* Code styling */
+code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  color: #333;
+  display: block;
+  margin-left: -220px;
+  margin-bottom: 20px;
+}
+
+/* Child selector (>): Setting padding for each  element of <ul>, that is a direct descendant of the element with the class .accordion-content */
+.accordion-content > ul {
+  padding: 10px;
+}
+
+/* Adjacent sibling selector (+): Set margin-bottom for each list item (li) inside the <ul> element, which is a descendant of the element with the class .accordion-content */
+.accordion-content > ul > li {
+  margin-bottom: 5px;
+}
+
+/* General sibling selector (~): Apply style to each ul list element that immediately follows a p element */
+section > p + ul {
+  color: #311616;
+}
