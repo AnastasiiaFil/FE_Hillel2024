@@ -1,0 +1,60 @@
+/* Set container properties */
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  text-align: center;
+  background-color: #c4c4c4;
+}
+
+/* Define floating row styles */
+.float_row {
+  background-color: #e6e6e6;
+  margin-top: 50px; /* Distance from the top to the dark gray block */
+  margin-bottom: 50px; /* Distance from the bottom to the next dark gray block */
+}
+
+/* Define common styles for floating elements */
+.float_right,
+.float_left {
+  width: 200px;
+  height: 200px;
+  background-color: #fc8f8f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  font-weight: bold; /* Bold font */
+  font-family: "Roboto", sans-serif;
+}
+
+/* Define styles for floating element aligned to the right */
+.float_right {
+  float: right;
+  margin-left: 15px;
+}
+
+/* Define styles for floating element aligned to the left */
+.float_left {
+  float: left;
+  margin-right: 15px;
+}
+
+.float_right:last-child {
+  margin-right: 0; /* Remove right margin from the last right floating element */
+}
+
+/* Define styles for small elements */
+.small {
+  width: 100px; /* Half width */
+  height: 100px;
+}
+
+/* Create clearfix to clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
