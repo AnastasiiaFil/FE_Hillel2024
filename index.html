@@ -4,11 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Table</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 
 <body>
-
+    <table>
+        <tr class="blue">
+            <td colspan="4">MY FIRST TABLE</td>
+        </tr>
+        <tr class="blue">
+            <td>First cell</td>
+            <td>Second cell</td>
+            <td colspan="2" rowspan="3" class="yellow">6 cells merged together</td>
+        </tr>
+        <tr class="blue">
+            <td colspan="2" class="yellow">2 cells merged into one</td>
+        </tr>
+        <tr class="blue">
+            <td class="yellow">1st cell <br> 3d row</td>
+            <td class="yellow">2st cell <br> 3d row</td>
+        </tr>
+        <tr class="yellow">
+            <td colspan="4">Do you like tables?</td>
+        </tr>
+    </table>
 </body>
 
 </html>
