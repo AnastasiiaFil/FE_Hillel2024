@@ -4,9 +4,9 @@ table {
 
 th,
 td {
-  border: 1px solid black;
   padding: 10px;
   text-align: center;
+  border: 2px double black; /* Setting a double border */
 }
 
 .blue {
