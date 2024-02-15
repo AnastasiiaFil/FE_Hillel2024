@@ -1,13 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Multi-tier menu</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
+    <section class="menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+                <a href="#products" class="dropbtn">Products </a>
+                <div class="dropdown-content">
+                    <a href="#">Product 1</a>
+                    <div class="sub-dropdown">
+                        <a href="#">Product 2 </a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#">Sub Item</a></li>
+                                <li><a href="#">Sub Item</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </section>
 
 </body>
 

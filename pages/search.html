@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+    <header class="top">
+        <h1>Car Search</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <form action="search.html" method="get">
+                <div class="input-row">
+                    <label for="body_type">Body Type:</label><br>
+                    <select id="body_type" name="body_type">
+                        <option selected disabled>Select Body Type</option>
+                        <option value="City car">City car</option>
+                        <option value="Hatchback">Hatchback</option>
+                        <option value="Saloon">Saloon</option>
+                        <option value="Crossover">Crossover</option>
+                        <option value="Cabriolet">Cabriolet</option>
+                    </select>
+                </div>
+
+                <div class="input-row">
+                    <label for="brand">Car Brand:</label><br>
+                    <select id="brand" name="brand">
+                        <option selected disabled>Select Brand</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Porsche">Porsche</option>
+                        <option value="Audi">Audi</option>
+                        <option value="Jaguar">Jaguar</option>
+                    </select>
+                </div>
+
+                <div class="input-row">
+                    <label for="country">Country of Manufacture:</label><br>
+                    <input type="text" id="country" name="country">
+                </div>
+
+                <div class="input-row">
+                    <label for="price_from">Price From:</label><br>
+                    <input type="number" id="price_from" name="price_from">
+                </div>
+
+                <div class="input-row">
+                    <label for="price_to">Price To:</label><br>
+                    <input type="number" id="price_to" name="price_to">
+                </div>
+
+                <div class="input-row">
+                    <label for="year_from">Year From:</label><br>
+                    <input type="number" id="year_from" name="year_from">
+                </div>
+
+                <div class="input-row">
+                    <label for="year_to">Year To:</label><br>
+                    <input type="number" id="year_to" name="year_to">
+                </div>
+
+                <div class="input-row">
+                    <label for="condition">Condition:</label><br>
+                    <select id="condition" name="condition" multiple>
+                        <option value="Damaged">Damaged</option>
+                        <option value="Under loan">Under loan</option>
+                        <option value="Not customs cleared">Not customs cleared</option>
+                    </select>
+                </div>
+
+                <div class="input-row">
+                    <label for="fuel_type">Fuel Type:</label><br>
+                    <select id="fuel_type" name="fuel_type">
+                        <option selected disabled>Select Fuel Type</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="Petrol">Petrol</option>
+                        <option value="Electricity">Electricity</option>
+                        <option value="Natural gas">Natural gas</option>
+                        <option value="Hybrid">Hybrid</option>
+                    </select>
+                </div>
+
+                <div class="input-row">
+                    <label for="transmission">Transmission type:</label><br>
+                    <div id="transmission" class="transmission-options">
+                        <label>
+                            <span>Automatic</span>
+                            <input checked type="radio" name="transmission" value="Automatic">
+                        </label>
+                        <label>
+                            <span>Manual</span>
+                            <input type="radio" name="transmission" value="Manual">
+                        </label>
+                    </div>
+
+
+                </div>
+
+                <div class="input-row">
+                    <label for="color">Color:</label><br>
+                    <select id="color" name="color">
+                        <option selected disabled>Select Color</option>
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Gray">Gray</option>
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Yellow">Yellow</option>
+                        <option value="Green">Green</option>
+                        <option value="Brown">Brown</option>
+                    </select>
+                </div>
+
+                <div class="input-row">
+                    <label for="comfort">Comfort:</label><br>
+                    <input type="checkbox" name="comfort" value="sunroof"> Sunroof<br>
+                    <input type="checkbox" name="comfort" value="leather_seats"> Leather seats<br>
+                    <input type="checkbox" name="comfort" value="wipers"> Automatic wipers<br>
+                    <input type="checkbox" name="comfort" value="climate_control"> Dual-zone automatic climate
+                    control<br>
+                    <input type="checkbox" name="comfort" value="steering_wheel"> Heated steering wheel<br>
+                    <input type="checkbox" name="comfort" value="adjustable_seats"> Electrically adjustable front
+                    seats<br>
+                    <input type="checkbox" name="comfort" value="ventilated_seats"> Ventilated seats
+                </div>
+
+                <div class="input-row">
+                    <button type="reset">Reset</button>
+                    <input type="submit" value="Search">
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>
