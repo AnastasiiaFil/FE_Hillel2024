@@ -46,6 +46,24 @@
   margin-right: 0; /* Remove right margin from the last right floating element */
 }
 
+.float-item-wrapper {
+  float: right;
+}
+
+.float-item {
+  float: left;
+  background-color: #fc8f8f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  margin-left: 15px;
+  width: 200px;
+  height: 200px;
+}
+
 /* Define styles for small elements */
 .small {
   width: 100px; /* Half width */
