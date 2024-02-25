@@ -28,6 +28,7 @@
   --gray: #eeeff1;
   --darkGray: #727272;
   --dark-blue: #34547a;
+  --dark-blue-hover: #1e344e;
   --white: #fff;
   --black: #000;
 }
@@ -63,14 +64,6 @@ a {
   margin-right: 42px;
 }
 
-.highlight-link {
-  color: var(--dark-blue);
-}
-
-nav {
-  margin-bottom: 151px;
-}
-
 p {
   color: var(--darkGray);
   margin-bottom: 65px;
@@ -89,7 +82,6 @@ h6 {
 
 h1 {
   font-size: 48px;
-  margin-bottom: 60px;
 }
 
 h2 {
@@ -124,17 +116,33 @@ button:focus {
 }
 
 button:hover {
-  background-color: #1e344e;
+  background-color: var(--dark-blue-hover);
 }
 
 /* Header */
 .header {
   padding-top: 80px;
-  padding-bottom: 140px;
+  padding-bottom: 80px;
   background-color: var(--gray);
 }
 
+nav a {
+  transition: color 0.5s;
+}
+nav a:hover {
+  color: var(--dark-blue);
+}
 /* Sections */
+.zero-section {
+  padding-top: 71px;
+  padding-bottom: 141px;
+  background-color: var(--gray);
+}
+
+.zero-section .title {
+  margin-bottom: 60px;
+}
+
 .section {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -152,6 +160,7 @@ button:hover {
 }
 
 .second-section {
+  text-align: center;
   background-color: var(--dark-blue);
 }
 
@@ -159,17 +168,22 @@ button:hover {
   color: var(--white);
 }
 
+.second-section h4 {
+  margin-bottom: 3px;
+}
+
 .icons-wrapper {
   display: inline-block;
   vertical-align: top; /* To align containers at the top */
-  margin-right: 15px; /* Approximate spacing between containers */
+}
+
+.icons-wrapper:not(:last-child) {
+  margin-right: 49px; /* Approximate spacing between containers */
 }
 
 .icon-text {
   display: inline-block;
   margin-left: 20px; /* Approximate spacing between image and text */
-  margin-top: 3px;
-  margin-bottom: 3px;
 }
 
 .third-section {
@@ -181,6 +195,13 @@ button:hover {
   margin-bottom: 57px;
 }
 
+.third-section iframe {
+  display: block;
+  max-width: 1110px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Footer */
 footer {
   padding-top: 50px;
@@ -199,8 +220,6 @@ footer {
 
 .container {
   max-width: var(--maxWidth);
-  padding-left: 100px;
-  padding-right: 100px;
   margin-left: auto;
   margin-right: auto;
 }
