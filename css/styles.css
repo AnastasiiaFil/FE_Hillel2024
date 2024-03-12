@@ -1030,7 +1030,8 @@ a.start:focus {
 
 .case-studies p {
   margin-bottom: 15px;
-  max-width: 78.37%;
+  max-width: 90.37%;
+  font-size: clamp(14px, 3vw, 20px);
 }
 
 .case-studies a {
@@ -1074,6 +1075,26 @@ a.start:focus {
   width: 20.09%;
 }
 
+@media (max-width: 710px) {
+  .map .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .map-container .map-column {
+    width: 31%;
+    margin-bottom: 40px;
+  }
+
+  .map-container {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 6%;
+  }
+}
+
 /* Footer */
 .footer .flex-container {
   margin-top: 48px;
@@ -1106,4 +1127,66 @@ a.start:focus {
 
 .right-side {
   margin-right: 5.8%;
+}
+
+@media (min-width: 982px) {
+  .left-side {
+    width: 31.8%;
+    display: flex;
+    gap: 3.4%;
+  }
+
+  .left-side p {
+    width: 73.2%;
+    margin-top: 10px;
+  }
+
+  .right-side {
+    margin-right: 5.8%;
+  }
+}
+
+@media (min-width: 552px) {
+  .left-side {
+    width: 57%;
+  }
+
+  .left-side p {
+    margin-top: 0;
+  }
+
+  .right-side {
+    margin-right: 3.5%;
+  }
+}
+
+@media (min-width: 752px) {
+  .left-side {
+    width: 40.8%;
+    display: flex;
+    gap: 3.4%;
+  }
+
+  .left-side p {
+    width: 73.2%;
+    margin-top: 10px;
+  }
+
+  .right-side {
+    margin-right: 5.8%;
+  }
+}
+
+@media (max-width: 551.9px) {
+  .left-side {
+    width: 75%;
+  }
+
+  .left-side p {
+    margin-top: 0;
+  }
+
+  .right-side {
+    margin-right: 1.5%;
+  }
 }
