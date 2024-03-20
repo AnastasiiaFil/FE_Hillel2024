@@ -140,6 +140,7 @@ button {
   line-height: 3.75;
   font-weight: 600;
   order: 1;
+  margin-left: auto;
 }
 
 .button-white {
@@ -253,10 +254,6 @@ a {
 
 .menu__item:not(:last-child) {
   margin-right: 20px;
-}
-
-.menu__item:last-child {
-  margin-right: 305px;
 }
 
 .burger-menu.active .burger-line {
