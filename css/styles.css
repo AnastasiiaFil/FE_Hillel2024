@@ -33,7 +33,7 @@
 } */
 
 :root {
-  --maxWidth: 1290px;
+  --maxWidth: 89.58%;
   --primaryFont: "Graphik LC TT", sans-serif;
   --primaryTextColor: #000;
   --primaryTextSize: 20px;
@@ -125,7 +125,7 @@ h6 {
   max-width: var(--maxWidth);
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 button {
@@ -984,6 +984,10 @@ a.start:focus {
     text-align: center;
   }
 
+  .cards-2 h2 {
+    text-align: center;
+  }
+
   .cards-2 p {
     max-width: 100%;
   }
@@ -995,11 +999,20 @@ a.start:focus {
   background-color: var(--blue);
   margin-top: 67px;
 }
-.feedback .flex-container {
+/* .feedback .flex-container {
   max-width: var(--maxWidth);
-}
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+} */
 
-.feedback .info-box p {
+/* .feedback .info-box p {
+  
+} */
+
+.feedback .info-box {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 23px;
   max-width: 95.3%;
   width: 100%;
@@ -1007,12 +1020,7 @@ a.start:focus {
   line-height: 1.33;
 }
 
-.feedback .info-box img {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.feedback .additional p {
+.feedback .additional {
   font-size: 15px;
   line-height: 1.67;
   margin-bottom: 7px;
@@ -1029,7 +1037,7 @@ a.start:focus {
     padding-top: 63px;
   }
 
-  .feedback .additional img {
+  .feedback .logo {
     max-width: 12.8%;
     width: 100%;
     margin-bottom: 165px;
@@ -1044,20 +1052,26 @@ a.start:focus {
 
 @media (max-width: 899.9px) {
   .feedback .flex-container {
+    flex-direction: column-reverse;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .feedback .info-box p {
+  .feedback .info-box {
     max-width: 100%;
     padding-top: 2%;
+    display: flex;
+    /* column-gap: 42%; */
+    flex-direction: column-reverse;
   }
 
   .feedback .img-box {
-    display: inline-block;
+    max-width: 100%;
+    margin-top: 5%;
   }
 
-  .feedback .additional p,
-  img {
+  .feedback .additional {
     margin-bottom: 3%;
   }
 }
@@ -1071,7 +1085,7 @@ a.start:focus {
 .rating .img-box {
   /* padding-top: 89px;
   padding-bottom: 84px; */
-  width: 28.12%;
+  width: 53.12%;
   height: auto;
   /* max-width: 110%; */
 }
@@ -1086,7 +1100,7 @@ a.start:focus {
 }
 
 .rating .rating-title h4 {
-  font-size: 35px;
+  font-size: clamp(20px, 3vw, 35px);
   line-height: 1.43;
   padding-top: 47px;
   padding-bottom: 31px;
@@ -1141,6 +1155,51 @@ a.start:focus {
   flex-direction: row;
   flex-wrap: wrap;
   /* gap: 7%; */
+}
+
+@media (min-width: 1300px) {
+  .rating .img-box {
+    width: 28.12%;
+  }
+}
+
+@media (max-width: 1000.9px) {
+  .rating .info-box {
+    display: flex;
+    /* justify-content: center;
+    flex-basis: 63%; */
+    margin-top: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .rating .img-box {
+    width: 33.12%;
+  }
+}
+
+@media (max-width: 760.9px) {
+  .rating .img-box {
+    width: 33.12%;
+  }
+
+  .rating .flex-container {
+    flex-direction: column;
+  }
+
+  .rating .rating-results {
+    border-left: none;
+    border-top: solid 1px var(--black);
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .rating .rating-info {
+    margin-left: 0;
+  }
 }
 
 /* Eleventh part: Integrate */
