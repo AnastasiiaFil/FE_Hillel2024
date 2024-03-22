@@ -1338,8 +1338,12 @@ a.start:focus {
 
 .case-studies a {
   font-weight: 600;
-  font-size: 20px;
+  font-size: clamp(12px, 3vw, 20px);
   line-height: 1.5;
+}
+
+.case-studies a:hover {
+  font-size: clamp(14px, 3vw, 22px);
 }
 
 .map .flex-container {
@@ -1491,7 +1495,24 @@ a.start:focus {
   margin-right: 5.8%;
 }
 
-@media (min-width: 982px) {
+@media (max-width: 1095.9px) {
+  .left-side {
+    width: 44.8%;
+  }
+}
+
+@media (max-width: 777.9px) {
+  .left-side {
+    width: 56.8%;
+  }
+}
+
+@media (max-width: 614.9px) {
+  .left-side p {
+    display: none;
+  }
+}
+/* @media (min-width: 982px) {
   .left-side {
     width: 31.8%;
     display: flex;
@@ -1551,4 +1572,4 @@ a.start:focus {
   .right-side {
     margin-right: 1.5%;
   }
-}
+} */
