@@ -140,7 +140,7 @@ button {
   min-width: 10%;
   /* padding: 13px 18px 11px; */
   font-size: clamp(10px, 5vw, 16px);
-  line-height: 3.75;
+  line-height: 3;
   font-weight: 600;
   order: 1;
   /* margin-left: auto; */
@@ -387,7 +387,28 @@ a {
   }
 }
 
-@media (max-width: 389.9px) {
+@media (max-width: 480px) {
+  .btn-wrap {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 30px;
+    padding: 0 20px;
+  }
+
+  .header .container {
+    justify-content: space-between;
+  }
+
+  .header .inner-container {
+    width: auto;
+  }
+
+  .hide {
+    display: none;
+  }
+}
+/* @media (max-width: 389.9px) {
   .btn-wrap {
     width: 85%;
   }
@@ -398,7 +419,7 @@ a {
   .burger-icon {
     width: 20px;
   }
-}
+} */
 
 /* Sections */
 
@@ -1607,6 +1628,9 @@ a.start:focus {
   margin-right: 5.8%;
 }
 
+.toggle-button {
+  display: hide;
+}
 @media (min-width: 700px) {
   .footer .flex-container {
     display: flex;
@@ -1634,12 +1658,6 @@ a.start:focus {
   }
 }
 
-@media (max-width: 614.9px) {
-  .left-side p {
-    display: none;
-  }
-}
-
 @media (max-width: 699.9px) {
   .footer .flex-container {
     text-align: center;
@@ -1649,5 +1667,38 @@ a.start:focus {
   }
   .left-side p {
     margin-bottom: 20px;
+  }
+
+  .right-side {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .toggle-button {
+    position: absolute;
+    left: 60%;
+    transform: translateY(-420%) rotate(180deg);
+    width: 30px;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .toggle-button svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .toggle-button svg {
+    transition: transform 0.3s ease;
+    transform-origin: center;
+  }
+
+  .toggle-button.active svg {
+    transform: rotate(90deg);
+    left: 0;
   }
 }
