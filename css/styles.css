@@ -1674,11 +1674,16 @@ a.start:focus {
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 481px) {
+  .toggle-button svg {
+    display: none;
+  }
+}
+@media (max-width: 480.9px) {
   .toggle-button {
     position: absolute;
-    left: 60%;
-    transform: translateY(-420%) rotate(180deg);
+    left: 0;
+    transform: translateY(-442%) rotate(180deg);
     width: 30px;
     height: auto;
     background-color: #fff;
