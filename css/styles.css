@@ -353,7 +353,7 @@ a {
 
   .burger-menu.active .menu {
     right: 0;
-    top: 51px;
+    top: 31px;
     visibility: visible;
   }
 
